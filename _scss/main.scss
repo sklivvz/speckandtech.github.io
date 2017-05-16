@@ -6,6 +6,7 @@
 @import "event";
 @import "font";
 @import "navbar";
+@import "nav-button";
 
 body {
   background: white;
@@ -33,4 +34,12 @@ a {
 
 hr {
   border: 2px solid #E5E5E5;
+}
+
+.centered {
+  text-align: center;
+}
+
+.active {
+  color: black;
 }

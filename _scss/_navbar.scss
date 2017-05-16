@@ -3,9 +3,34 @@ nav {
   left: 0;
   right: 0;
   text-align: right;
-  padding: 1vh;
+  padding: 9px;
   font-size: 14px;
-  @extend .container;
+  height: auto;
+  background: linear-gradient(0deg, rgba(255,255,255,0), rgba(255,255,255,1));
+  // box-shadow: 0 0 4px rgba(black, .4);
+  display: flex;
+  flex-direction: column;
+
+
+  .separator{
+    width: 16px;
+  }
+
+  .top-nav {
+    width: 100%;
+    height: 28px;
+    padding-top: 10px;
+    padding-bottom: 8px;
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  h1 {
+    font-size: 1.8em;
+    font-weight: normal;
+  }
 
   li {
     vertical-align: middle;
@@ -18,8 +43,17 @@ nav {
   }
 }
 
+@include small-screen {
+  nav {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
 @include mobile {
   nav {
+    padding-left: 16px;
+    padding-right: 16px;
     ul {
       text-align: center;
     }
@@ -29,5 +63,39 @@ nav {
       position: relative;
       display: block;
     }
+    .about-link {
+      display: none;
+    }
+
+    .bottom-nav {
+      padding-top: 24px;
+    }
   }
+}
+
+.navigation-panel {
+  color: white;
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(231,66,79,1);
+  ul {
+    padding-top: 80px;
+    list-style: none;
+    text-align: center;
+  }
+  h1 {
+    font-size: 3em;
+  }
+  a {
+    text-decoration: none;
+    &:visited {
+      color: white;
+    }
+  }
+}
+
+.visible {
+  display: block;
 }

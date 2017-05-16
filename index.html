@@ -6,19 +6,48 @@ description: Speck&Tech is a community of startuppers, students, professionals a
 
 <div class="homepage">
   <nav>
-    <ul>
-      <li class="logo">
-        <a href="/">
-          <img src="../img/small-logo.svg" alt="logo">
-        </a>
-      </li>
-      <li>join us:</li>
-      <li><script async defer src="http://slackin-speckandtech.rhcloud.com/slackin.js"></script></li>
-      <li> | <a target="_blank" href="https://www.facebook.com/speckandtech/">facebook</a></li>
-      <li> | <a target="_blank" href="https://telegram.me/speckandtech">telegram</a></li>
-    </ul>
+    <div class="container top-nav">
+      <ul>
+        <li class="logo">
+          <a href="/">
+            <img src="../img/small-logo.svg" alt="logo">
+          </a>
+        </li>
+        <li class="about-link">
+          <h1>
+            <a  href="/about">
+              About
+            </a>
+          </h1>
+        </li>
+      </ul>
+      <div id="nav-button">
+        <span class="burger-1"></span>
+        <span class="burger-2"></span>
+        <span class="burger-cross"></span>
+        <span class="burger-3"></span>
+      </div>
+    </div>
+    <div class="container bottom-nav">
+      <ul class="centered">
+        <li>join us:</li>
+        <li><script async defer src="http://slackin-speckandtech.rhcloud.com/slackin.js"></script></li>
+        <li> | <a target="_blank" href="https://www.facebook.com/speckandtech/">facebook</a></li>
+        <li> | <a target="_blank" href="https://telegram.me/speckandtech">telegram</a></li>
+      </ul>
+    </div>
   </nav>
-
+  <div class="navigation-panel">
+    <ul>
+      <li class="about-link">
+        <h1>
+          <a  href="/about">
+            About
+          </a>
+        </h1>
+      </li>
+    </ul>
+  </div>
   <section id="intro">
     <div>
       {% include animated_logo.html %}

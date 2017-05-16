@@ -10,8 +10,8 @@
 #intro {
   $border-bottom: 10px;
   text-align: center;
+  padding-top: 172px;
   height: auto;
-  margin-top: 6vw;
   @include flexbox();
   @include justify-content(center);
 

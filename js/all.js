@@ -6,4 +6,13 @@ $( document ).ready(function() {
 	        typeSpeed: 0
 	    });
 	});
+	$("[href]").each(function() {
+        if (this.href == window.location.href) {
+            $(this).addClass("active");
+        }
+    });
+	$('#nav-button').click(function(){
+		$(this).toggleClass('open');
+		$('.navigation-panel').toggleClass('visible');
+	});
 });
