@@ -759,7 +759,7 @@ nav {
       padding-top: 24px; } }
 
 .navigation-panel {
-  color: white;
+  color: white !important;
   display: none;
   position: absolute;
   width: 100%;
@@ -767,6 +767,7 @@ nav {
   background: #e7424f; }
   .navigation-panel ul {
     padding-top: 80px;
+    padding-left: 0px;
     list-style: none;
     text-align: center; }
   .navigation-panel h1 {
@@ -774,7 +775,7 @@ nav {
   .navigation-panel a {
     text-decoration: none; }
     .navigation-panel a:visited {
-      color: white; }
+      color: white !important; }
 
 .visible {
   display: block; }
@@ -785,7 +786,7 @@ nav {
   width: 36px;
   height: 30px;
   position: absolute;
-  top: 19px;
+  top: 20px;
   right: 8px;
   -webkit-transform: rotate(0deg);
   transform: rotate(0deg);
@@ -797,23 +798,25 @@ nav {
     height: 6px;
     width: 100%;
     background: #d3531a;
-    border-radius: 9px;
     opacity: 1;
     left: 0;
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
     transition: .25s ease-in-out; }
     #nav-button span:nth-child(1) {
+      border-radius: 5px 5px 0px 0px;
       top: 0px;
       background: #debb1e; }
     #nav-button span:nth-child(2), #nav-button span:nth-child(3) {
-      top: 11px; }
+      top: 10px;
+      height: 7px; }
     #nav-button span:nth-child(4) {
+      border-radius: 0 0 2px 2px;
       background: #debb1e;
-      top: 23px; }
+      top: 21px; }
 
 #nav-button.open span:nth-child(1) {
-  top: 23px;
+  top: 21px;
   width: 0%;
   left: 50%; }
 

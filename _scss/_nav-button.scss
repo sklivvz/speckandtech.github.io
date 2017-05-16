@@ -4,7 +4,7 @@
   width: 36px;
   height: 30px;
   position: absolute;
-  top: 19px;
+  top: 20px;
   right: 8px;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
@@ -22,7 +22,7 @@
     height: 6px;
     width: 100%;
     background: #d3531a;
-    border-radius: 9px;
+    // border-radius: 9px;
     opacity: 1;
     left: 0;
     -webkit-transform: rotate(0deg);
@@ -35,23 +35,26 @@
     transition: .25s ease-in-out;
 
     &:nth-child(1) {
+      border-radius: 5px 5px 0px 0px;
       top: 0px;
       background: #debb1e;
     }
 
     &:nth-child(2), &:nth-child(3) {
-      top: 11px;
+      top: 10px;
+      height: 7px;
     }
 
     &:nth-child(4) {
+      border-radius: 0 0 2px 2px;
       background: #debb1e;
-      top: 23px;
+      top: 21px;
     }
   }
 }
 
 #nav-button.open span:nth-child(1) {
-  top: 23px;
+  top: 21px;
   width: 0%;
   left: 50%;
 }
