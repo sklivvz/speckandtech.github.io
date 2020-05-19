@@ -1,20 +1,35 @@
 nav {
-  position: absolute;
+  position: fixed;
+  top: 0;
   left: 0;
   right: 0;
-  text-align: right;
-  padding: 1vh;
+  padding: 1rem;
   font-size: 14px;
-  @extend .container;
+  // @extend .container;
+  height: 56px;
+  max-width: 900px;
+  margin: 0 auto;
 
-  li {
-    vertical-align: middle;
-    display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .topbar__right {
+    display: flex;
+    align-items: center;
   }
+  // ul {
+  //   list-style: none;
+  // }
+
+  // li {
+  //   vertical-align: middle;
+  //   display: inline-block;
+  // }
 
   .logo {
-    position: absolute;
-    left: 0;
+    //   position: absolute;
+    //   left: 0;
   }
 }
 
@@ -25,9 +40,9 @@ nav {
     }
 
     .logo {
-      margin: 12px 0 10px 0;
-      position: relative;
-      display: block;
+      // margin: 12px 0 10px 0;
+      // position: relative;
+      // display: block;
     }
   }
 }
