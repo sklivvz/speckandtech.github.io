@@ -5,33 +5,39 @@ description: Speck&Tech is a community of entrepreneurs, students, professionals
 ---
 
 <div class="homepage">
-  <nav>
-    <div>
-      <div class="logo">
-        <a href="/">
-          <img src="../img/small-logo.svg" alt="logo">
-        </a>
-      </div>
-    </div>
-    <div class="topbar__right">
-      <div>join us:</div>
+  <div class="topbar__container">
+    <nav>
       <div>
-        <a target="_blank" href="//t.me/speckandtech">telegram</a>
+        <div class="logo">
+          <a href="/">
+            <img src="../img/small-logo.svg" alt="logo">
+          </a>
+        </div>
       </div>
-      <div> |
-        <a target="_blank" href="//bit.ly/speck-slack">slack</a>
+      <div class="topbar__right">
+        <!-- <div class="topbar__right__element claim">join us</div> -->
+        <!-- <div class="topbar__right__element">
+          <a target="_blank" href="//t.me/speckandtech">telegram</a>
+        </div>
+        <div class="topbar__right__element">
+          <a target="_blank" href="//bit.ly/speck-slack">slack</a>
+        </div>
+        <div class="topbar__right__element">
+          <a target="_blank" href="//fb.me/speckandtech/">facebook</a>
+        </div>
+        <div class="topbar__right__element">
+          <a target="_blank" href="//instagr.am/speckandtech">instagram</a>
+        </div> -->
+        <div class="topbar__right__element">
+          <a href="about">about</a>
+        </div>
+        <div class="topbar__right__element">
+          <a href="archive">archive</a>
+        </div>
       </div>
-      <div> |
-        <a target="_blank" href="//fb.me/speckandtech/">facebook</a>
-      </div>
-      <div> |
-        <a target="_blank" href="//instagr.am/speckandtech">instagram</a>
-      </div>
-      <div> |
-        <a href="about">about</a>
-      </div>
-    </div>
-  </nav>
+    </nav>
+  </div>
+  
 
   <section id="intro">
     <div>
@@ -41,17 +47,14 @@ description: Speck&Tech is a community of entrepreneurs, students, professionals
         <span id="claim-text"></span>
       </p>
 
-
       <div class="call-to-action">
-
         <div class="action">
           {% include homepage-main-cta.html %}
         </div>
       </div>
-
   </section>
 
-  <section id="about-homepage">
+  <section id="about-homepage" class="container">
     <p>
       A community of
       <strong>entrepreneurs, developers, designers, professionals</strong> and... anyone who wants to build a network of
@@ -123,7 +126,7 @@ description: Speck&Tech is a community of entrepreneurs, students, professionals
     </p>
   </div>
 
-  <section id="events">
+  <section id="events" class="container">
     <h2>Previous events</h2>
     {% for post in site.posts limit:6 %}
     {% if post.categories contains "event" %}
@@ -152,7 +155,7 @@ description: Speck&Tech is a community of entrepreneurs, students, professionals
   </section>
 </div>
 
-<section id="jobs">
+<section id="jobs" class="container">
   <h2>Who's hiring?</h2>
   <hr class="job-offers-separator">
   {% assign reversedJobOffers = site.job_offers | reverse %}

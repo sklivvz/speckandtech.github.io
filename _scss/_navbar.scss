@@ -1,48 +1,56 @@
-nav {
+.topbar__container {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  padding: 1rem;
-  font-size: 14px;
-  // @extend .container;
-  height: 56px;
+  background-color: white;
+  z-index: 2;
+}
+
+nav {
   max-width: 900px;
   margin: 0 auto;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 1rem;
+  overflow: hidden;
+  height: 32px;
+  @media only screen and (min-width: 768px) {
+    height: 56px;
+  }
 
   .topbar__right {
     display: flex;
     align-items: center;
   }
-  // ul {
-  //   list-style: none;
-  // }
-
-  // li {
-  //   vertical-align: middle;
-  //   display: inline-block;
-  // }
-
+  .topbar__right__element {
+    margin: 0 8px;
+    .mobile {
+      display: none;
+      @media only screen and (min-width: 992px) {
+        display: block;
+      }
+    }
+    a {
+      font-size: 20px;
+      text-decoration: none;
+      color: #0d0c22;
+      &:hover {
+        color: #e7424f;
+      }
+    }
+    &.claim {
+      text-transform: uppercase;
+    }
+  }
   .logo {
-    //   position: absolute;
-    //   left: 0;
   }
 }
 
 @include mobile {
   nav {
-    ul {
-      text-align: center;
-    }
-
     .logo {
-      // margin: 12px 0 10px 0;
-      // position: relative;
-      // display: block;
     }
   }
 }
