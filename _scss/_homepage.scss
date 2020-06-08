@@ -37,20 +37,14 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-}
-
-#intro {
   $border-bottom: 10px;
-
   text-align: center;
   display: flex;
   justify-content: center;
   min-height: 76vh;
-  padding-top: 56px;
+  padding-top: 96px;
   @media only screen and (min-width: 992px) {
-    // padding-top: 120px;
-    // min-height: 90vh;
-    // padding-top: 0;
+    padding-top: 56px;
   }
 
   & > div {
@@ -280,33 +274,21 @@
 }
 
 .next-sponsor {
-  background: #f77c85;
   margin-top: 3em;
-}
-
-.next-speaker {
-  margin-top: 0;
-  background: $red;
-}
-
-.next-speaker,
-.next-sponsor {
   margin-bottom: 0;
   padding: 2em 0;
-  color: white;
   text-align: center;
   display: block;
   h2 {
     font-size: 2em;
     margin-bottom: 0.8em;
-    color: white;
   }
   p {
     .btn {
-      background: white;
-      color: $red;
+      background: $red;
+      color: white;
       &:hover {
-        background: #fafafa;
+        background: darken($red, 20%);
       }
       &:visited {
         color: $red;
@@ -325,9 +307,12 @@
   margin: 2vw auto;
 
   p {
-    font-size: 26px;
+    font-size: 20px;
     line-height: 1.5em;
     text-align: center;
+    @media only screen and (min-width: 992px) {
+      font-size: 26px;
+    }
   }
 }
 
@@ -357,45 +342,48 @@
 
 #quote {
   margin-top: 76px;
-  padding: 3vw 0;
+  padding: 24px 0;
   color: white;
   background: $red;
+  @media only screen and (min-width: 768px) {
+    padding: 72px 0;
+  }
 
   .container {
-    display: flex;
-
+    @media only screen and (min-width: 768px) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
     .col-pic {
-      margin-left: 25%;
-      width: 25%;
-    }
-
-    .col-quote {
-      width: 25%;
-    }
-
-    @include mobile() {
-      .col-quote {
-        width: 50%;
+      img {
+        width: 100%;
+        box-shadow: 6px 6px #42e7da;
+        @media only screen and (min-width: 768px) {
+          box-shadow: 6px 6px #42e7da;
+          width: auto;
+          height: 200px;
+        }
       }
     }
-
+    .col-quote {
+      margin-top: 16px;
+      text-align: center;
+      @media only screen and (min-width: 768px) {
+        text-align: left;
+        margin-left: 36px;
+      }
+    }
     a {
       color: white;
     }
-
     blockquote,
     p {
-      text-align: left;
+      // text-align: left;
       background: $red;
     }
-
     blockquote {
-      font-style: italic;
       font-size: 2em;
-    }
-
-    img {
-      box-shadow: 6px 6px #42e7da;
     }
   }
 }
@@ -407,7 +395,6 @@
   @include small-screen {
     display: flex;
     flex-direction: column;
-
     a {
       flex-basis: 216px;
     }
@@ -427,6 +414,18 @@
   #event-sponsor {
     margin-bottom: 24px;
   }
+
+  @media only screen and (min-width: 768px) {
+    h2 {
+      font-size: 26px;
+    }
+  }
+  .partners__logos {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 #media-partners {
@@ -434,6 +433,36 @@
   margin-top: 2em;
   h3 {
     margin-bottom: 0.3em;
+  }
+}
+
+.next-speaker {
+  margin-top: 0;
+  background: $red;
+  margin-bottom: 0;
+  padding: 2em 0;
+  color: white;
+  text-align: center;
+  display: block;
+  h2 {
+    font-size: 2em;
+    margin-bottom: 0.8em;
+    color: white;
+  }
+  p {
+    .btn {
+      background: white;
+      color: $red;
+      &:hover {
+        background: #fafafa;
+      }
+      &:visited {
+        color: $red;
+      }
+    }
+  }
+  @media only screen and (min-width: 768px) {
+    padding: 72px 0;
   }
 }
 

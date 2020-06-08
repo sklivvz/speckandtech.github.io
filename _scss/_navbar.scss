@@ -3,7 +3,8 @@
   top: 0;
   left: 0;
   right: 0;
-  background-color: white;
+  background-color: transparent;
+  transition: all 0.35s ease-in-out;
   z-index: 2;
 }
 

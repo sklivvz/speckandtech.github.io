@@ -15,7 +15,7 @@ body {
   font-size: 16px;
   // font-family: "Neo Sans", sans-serif;
   font-family: "Roboto", sans-serif;
-  color: #0d0c22;
+  color: #333333;
 }
 
 p {
@@ -45,6 +45,10 @@ a {
   margin: 0 auto;
   max-width: 900px;
   position: relative;
+  padding: 0 8px;
+  @media only screen and (min-width: 768px) {
+    padding: 0 16px;
+  }
   @media only screen and (min-width: 992px) {
     padding: 0 24px;
   }

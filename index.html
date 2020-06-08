@@ -37,7 +37,6 @@ description: Speck&Tech is a community of entrepreneurs, students, professionals
       </div>
     </nav>
   </div>
-  
 
   <section id="intro">
     <div>
@@ -68,11 +67,12 @@ description: Speck&Tech is a community of entrepreneurs, students, professionals
   <section id="quote">
     <div class="container">
       <div class="col-pic">
-        <img src="img/jgcumming-cto.jpg" alt="John Graham-Cumming, CTO of Cloudflare" height="200px">
+        <img src="img/jgcumming-cto.jpg" alt="John Graham-Cumming, CTO of Cloudflare">
       </div>
       <div class="col-quote">
         <blockquote>"It's a great event!"</blockquote>
-        <p><a href="https://twitter.com/jgrahamc">John Graham-Cumming</a> — CTO@Cloudflare</p>
+        <p><a href="https://twitter.com/jgrahamc">John Graham-Cumming</a> <br> 
+          CTO @ Cloudflare</p>
       </div>
     </div>
   </section>
@@ -80,94 +80,100 @@ description: Speck&Tech is a community of entrepreneurs, students, professionals
   <section id="partners">
     <h2>Powered by</h2>
     <div class="container">
-
-      <a target="_blank" href="//belka.us" style="padding:20px;">
-        <img width="300px" height="auto" src="img/logos/belka_logo.svg" alt="Supported by Belka">
-      </a>
-
-      <a target="_blank" href="//spaziodati.eu/it/" style="padding:20px;">
-        <img width="300px" src="img/spaziodati.svg" alt="Supported by SpazioDati">
-      </a>
-     
-      <a target="_blank" href="//www.fattureincloud.it">
-        <img width="150px" src="img/logo-fic-blu.svg" alt="Supported by Fatture in Cloud" />
-      </a>
-      
-      <a target="_blank" href="//energydrink-it.redbull.com/">
-        <img width="60px" src="img/RedBull.png" alt="Supported by RedBull">
-      </a>
-
-      <a target="_blank" href="//www.jetbrains.com/">
-        <img height="60px" src="img/jetbrains.svg" alt="Supported by Jetbrains">
-      </a>
-      
-      <a target="_blank" href="//www.diginate.com/">
-        <img width="150px" src="img/diginate_logo.png" alt="Supported by Diginate">
-      </a>
-
+      <div class="partners__logos">
+        <a target="_blank" href="//belka.us" style="padding:20px;">
+          <img width="300px" height="auto" src="img/logos/belka_logo.svg" alt="Supported by Belka">
+        </a>
+  
+        <a target="_blank" href="//spaziodati.eu/it/" style="padding:20px;">
+          <img width="300px" src="img/spaziodati.svg" alt="Supported by SpazioDati">
+        </a>
+       
+        <a target="_blank" href="//www.fattureincloud.it">
+          <img width="150px" src="img/logo-fic-blu.svg" alt="Supported by Fatture in Cloud" />
+        </a>
+        
+        <a target="_blank" href="//energydrink-it.redbull.com/">
+          <img width="60px" src="img/RedBull.png" alt="Supported by RedBull">
+        </a>
+  
+        <a target="_blank" href="//www.jetbrains.com/">
+          <img height="60px" src="img/jetbrains.svg" alt="Supported by Jetbrains">
+        </a>
+        
+        <a target="_blank" href="//www.diginate.com/">
+          <img width="150px" src="img/diginate_logo.png" alt="Supported by Diginate">
+        </a>
+      </div>
     </div>
   </section>
 
   <div class="next-sponsor">
-    <h2>
-      Would you like to sponsor Speck&amp;Tech?
-    </h2>
-    <p>
-      <a href="mailto:speckandtech@gmail.com" class="btn">💌 Contact us! 💌</a>
-    </p>
+    <div class="container">
+      <h2>
+        Would you like to sponsor Speck&amp;Tech?
+      </h2>
+      <p>
+        <a href="mailto:speckandtech@gmail.com" class="btn">💌 Contact us! 💌</a>
+      </p>
+    </div>
   </div>
 
   <div class="next-speaker">
-    <h2>
-      Do you wanna be our next speaker?
-    </h2>
-    <p>
-      <a href="https://speckandtech.typeform.com/to/z6YEpK" class="btn" target="_blank">💌 Write us! 💌</a>
-    </p>
+    <div class="container">
+      <h2>
+        Do you wanna be our next speaker?
+      </h2>
+      <p>
+        <a href="https://speckandtech.typeform.com/to/z6YEpK" class="btn" target="_blank">💌 Write us! 💌</a>
+      </p>
+    </div>
   </div>
 
   <section id="events" class="container">
-    <h2>Previous events</h2>
-    {% for post in site.posts limit:6 %}
-    {% if post.categories contains "event" %}
-    <article class="{% if forloop.first %}first{% elsif forloop.last %}last{% else %}middle{% endif %}">
-      <div class="article-head">
-        <p class="date">{{ post.date | date: "%b %d, %Y" }}</p>
-        <h3 class="title">
-          <a href="{{ post.url | remove_first:'/'}}" class="js-pjax">{{ post.title }}</a>
-        </h3>
-      </div>
-    </article>
-    <hr>
-    {% endif %}
-    {% endfor %}
-    <!-- link to older issues -->
-    <article class="{% if forloop.first %}first{% elsif forloop.last %}last{% else %}middle{% endif %}">
-      <div class="article-head">
-        <p class="date">I'm looking for older events 🧐</p>
-        <h3 class="title">
-          <a href="archive" class="js-pjax noline"><span class="underline">Archive</span> 🦕</a>
-        </h3>
-      </div>
-    </article>
-    <hr>
-    <!-- /link to older issues -->
+    <div class="container">
+      <h2>Previous events</h2>
+      {% for post in site.posts limit:6 %}
+      {% if post.categories contains "event" %}
+      <article class="{% if forloop.first %}first{% elsif forloop.last %}last{% else %}middle{% endif %}">
+        <div class="article-head">
+          <p class="date">{{ post.date | date: "%b %d, %Y" }}</p>
+          <h3 class="title">
+            <a href="{{ post.url | remove_first:'/'}}" class="js-pjax">{{ post.title }}</a>
+          </h3>
+        </div>
+      </article>
+      <hr>
+      {% endif %}
+      {% endfor %}
+      <!-- link to older issues -->
+      <article class="{% if forloop.first %}first{% elsif forloop.last %}last{% else %}middle{% endif %}">
+        <div class="article-head">
+          <p class="date">I'm looking for older events 🧐</p>
+          <h3 class="title">
+            <a href="archive" class="js-pjax noline"><span class="underline">Archive</span> 🦕</a>
+          </h3>
+        </div>
+      </article>
+      <hr>
+    </div>
   </section>
 </div>
 
 <section id="jobs" class="container">
-  <h2>Who's hiring?</h2>
-  <hr class="job-offers-separator">
-  {% assign reversedJobOffers = site.job_offers | reverse %}
-  {% for post in reversedJobOffers %}
-  <article class="{% if forloop.first %}first{% elsif forloop.last %}last{% else %}middle{% endif %}">
-    <div class="article-head">
-      <p class="date">{{ post.date | date: "%b %d, %Y" }}</p>
-      <h3 class="title">
-        <a href="{{ post.url }}" class="js-pjax">{{ post.title }}</a>
-      </h3>
-    </div>
-  </article>
-  <hr>
-  {% endfor %}
+  <div class="container">
+    <h2>Who's hiring?</h2>
+    {% assign reversedJobOffers = site.job_offers | reverse %}
+    {% for post in reversedJobOffers %}
+    <article class="{% if forloop.first %}first{% elsif forloop.last %}last{% else %}middle{% endif %}">
+      <div class="article-head">
+        <p class="date">{{ post.date | date: "%b %d, %Y" }}</p>
+        <h3 class="title">
+          <a href="{{ post.url }}" class="js-pjax">{{ post.title }}</a>
+        </h3>
+      </div>
+    </article>
+    <hr>
+    {% endfor %}
+  </div>
 </section>
