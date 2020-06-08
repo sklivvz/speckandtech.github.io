@@ -1,9 +1,9 @@
 {
-    "type": "post-event",
+    "type": "event",
 
     "pre-title": "",
-    "title": "S.T.A.Y. Home #1",
-    "date": "14/05/2020",
+    "title": "S.T.A.Y. Home #2",
+    "date": "08/06/2020",
     "time": "20:45",
 
     "location" : {
@@ -23,5 +23,5 @@
         "url": ""
     },
 
-    "ticket-url": "//bit.ly/stayhome_1"
+    "ticket-url": "//bit.ly/stay-home-2"
 }
